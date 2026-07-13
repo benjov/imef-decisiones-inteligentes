@@ -32,7 +32,8 @@ for env_path in [RAIZ.parent / ".env", RAIZ.parent.parent / ".env"]:
     if env_path.exists():
         for linea in env_path.read_text().splitlines():
             if linea.strip().startswith("ANTHROPIC_API_KEY") and "=" in linea:
-                os.environ.setdefault("ANTHROPIC_API_KEY", linea.split("=", 1)[1].strip())
+                valor = linea.split("=", 1)[1].strip().strip('"').strip("'")
+                os.environ.setdefault("ANTHROPIC_API_KEY", valor)
 
 cliente = anthropic.Anthropic()
 
