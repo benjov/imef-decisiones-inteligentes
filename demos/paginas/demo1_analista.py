@@ -17,7 +17,7 @@ from shared.graficas import ESQUEMA_GRAFICAS, renderizar
 estilos.aplicar()
 modo_respaldo = respaldo.toggle_respaldo()
 
-st.title("📊 Demo 1 · Analista financiero con IA")
+st.title("📊 Demo 1 · Analista Financiero con IA")
 st.caption("La IA lee datos crudos, decide qué es relevante, lo explica y lo grafica — en segundos.")
 
 PROMPT_SISTEMA = """Eres un analista financiero senior de una empresa mediana mexicana.
@@ -39,7 +39,8 @@ DATASETS = {
     "Ventas del semestre (datos sucios)": "ventas_sucias.csv",
 }
 
-eleccion = st.radio("Elige los datos a analizar:", [*DATASETS, "Subir mi propio archivo (CSV/XLSX)"],
+eleccion = st.radio("Elige los datos a analizar:", 
+                    [*DATASETS, "Subir mi propio archivo (CSV/XLSX)"],
                     horizontal=True)
 
 df = None

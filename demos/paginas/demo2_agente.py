@@ -17,7 +17,7 @@ estilos.aplicar()
 modo_respaldo = respaldo.toggle_respaldo()
 
 st.title("🤖 Demo 2 · Agente de punta a punta")
-st.caption("De un correo del viernes a las 6 pm… a un reporte de comité. El agente decide cada paso.")
+st.caption("De un correo del viernes a las 6 pm ... a un reporte de comité. El agente decide cada paso.")
 
 CORREOS = json.loads((DIR_DATA / "correos.json").read_text(encoding="utf-8"))
 

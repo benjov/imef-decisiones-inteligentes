@@ -18,9 +18,9 @@ st.set_page_config(
 )
 
 paginas = st.navigation([
-    st.Page("paginas/demo1_analista.py", title="Demo 1 · Analista financiero",
+    st.Page("paginas/demo1_analista.py", title="Demo 1 · Analista Financiero",
             icon="📊", default=True),
-    st.Page("paginas/demo2_agente.py", title="Demo 2 · Agente de punta a punta",
+    st.Page("paginas/demo2_agente.py", title="Demo 2 · Agente de Punta a Punta",
             icon="🤖"),
 ])
 paginas.run()
