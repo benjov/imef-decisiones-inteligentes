@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recursos · Decisiones Inteligentes · IMEF Morelos</title>
+<style>
+  :root { --azul: #1E3A5F; --azul-claro: #2563EB; --gris: #6B7280;
+          --fondo: #F7F9FC; --blanco: #FFFFFF; --tinta: #1F2937; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: var(--tinta); background: var(--fondo); line-height: 1.65; }
+  .contenedor { max-width: 860px; margin: 0 auto; padding: 0 1.2rem; }
+  header { background: var(--azul); color: #FFF; padding: 2.5rem 0; }
+  header h1 { font-size: 1.9rem; }
+  header a { color: #7FB1E8; text-decoration: none; font-size: 0.95rem; }
+  section { padding: 2.2rem 0 0.5rem; }
+  h2 { color: var(--azul); font-size: 1.5rem; margin-bottom: 1rem; }
+  .caja { background: var(--blanco); border: 1px solid #E5E7EB; border-radius: 14px;
+          padding: 1.5rem 1.8rem; margin-bottom: 1.2rem; }
+  dt { font-weight: 700; color: var(--azul-claro); margin-top: 0.9rem; }
+  dt:first-child { margin-top: 0; }
+  dd { margin-left: 0; color: var(--tinta); }
+  ol li, ul li { margin: 0.5rem 0 0.5rem 1.2rem; }
+  a { color: var(--azul-claro); }
+  footer { padding: 2.5rem 0; text-align: center; color: var(--gris); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="contenedor">
+    <a href="../">← Volver a la página del evento</a>
+    <h1>📚 Recursos para seguir explorando</h1>
+  </div>
+</header>
+
+<section>
+  <div class="contenedor">
+    <h2>Glosario mínimo</h2>
+    <div class="caja">
+      <dl>
+        <dt>IA generativa</dt>
+        <dd>Modelos que crean contenido nuevo (texto, imágenes, código) a partir de instrucciones en lenguaje natural.</dd>
+        <dt>LLM (modelo grande de lenguaje)</dt>
+        <dd>El motor detrás de la IA generativa de texto: un modelo entrenado con enormes volúmenes de texto que aprende a razonar y conversar.</dd>
+        <dt>Agente</dt>
+        <dd>Un LLM "con manos": además de responder, puede ejecutar acciones — consultar sistemas, usar herramientas, completar flujos de trabajo de varios pasos.</dd>
+        <dt>Tool use (uso de herramientas)</dt>
+        <dd>El mecanismo con el que un agente decide llamar a una herramienta (una consulta de ventas, una calculadora, un sistema) y usa el resultado para continuar.</dd>
+        <dt>RAG (generación aumentada con recuperación)</dt>
+        <dd>Técnica para que la IA responda con base en TUS documentos: primero busca en tu información y luego redacta con lo que encontró.</dd>
+        <dt>Alucinación</dt>
+        <dd>Cuando la IA afirma algo falso con total seguridad. Por eso: verificación humana en todo lo que toque dinero, clientes o cumplimiento.</dd>
+        <dt>Fine-tuning (ajuste fino)</dt>
+        <dd>Reentrenar parcialmente un modelo con datos propios para especializarlo. Costoso; casi siempre conviene intentar antes con RAG o buenos prompts.</dd>
+        <dt>Token</dt>
+        <dd>La unidad en que los modelos leen y cobran el texto (aprox. ¾ de una palabra). Los servicios de IA se facturan por tokens procesados.</dd>
+        <dt>Código asistido por IA</dt>
+        <dd>Programar con la IA como copiloto: sugiere, completa y corrige código dentro del editor.</dd>
+        <dt>Vibe coding</dt>
+        <dd>Describir en lenguaje natural lo que quieres y dejar que la IA escriba el código completo, iterando por conversación. Ideal para prototipos; para producción, ingeniería.</dd>
+      </dl>
+    </div>
+
+    <h2>¿Y el lunes qué hago? — checklist</h2>
+    <div class="caja">
+      <ol>
+        <li><strong>Prueba tú primero (semana 1).</strong> Resuelve UNA tarea real tuya con IA esta semana. El directivo que no ha usado IA no puede dirigirla.</li>
+        <li><strong>Repite el ejercicio de Colab</strong> con datos propios (anonimizados): es gratis y toma 15 minutos.</li>
+        <li><strong>Identifica dos quick wins (mes 1):</strong> procesos dolorosos, repetitivos y de bajo riesgo. Asigna un dueño de negocio y una métrica ANTES de empezar.</li>
+        <li><strong>Define qué datos NO se suben</strong> a herramientas gratuitas. Cuentas personales gratuitas con información de la empresa: no.</li>
+        <li><strong>Escribe una política de IA de UNA página:</strong> qué se puede, qué no, y con qué herramientas.</li>
+        <li><strong>Pon revisión humana obligatoria</strong> en todo lo que toque dinero, clientes o cumplimiento.</li>
+        <li><strong>Agenda una revisión trimestral (trimestre 1):</strong> qué se escala, qué se mata — sin funerales largos.</li>
+      </ol>
+    </div>
+
+    <h2>Para seguir explorando</h2>
+    <div class="caja">
+      <ul>
+        <li><a href="https://colab.research.google.com" target="_blank" rel="noopener">Google Colab</a> — cuadernos de análisis en el navegador, gratis y con IA integrada.</li>
+        <li><a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> — la IA que viste trabajar en las demos de hoy.</li>
+        <li><a href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Code</a> — la herramienta con la que se construyeron estas demos, conversando.</li>
+        <li><a href="https://github.com/benjov/imef-decisiones-inteligentes" target="_blank" rel="noopener">El código de las demos</a> — todo lo que viste hoy es público y reproducible.</li>
+      </ul>
+    </div>
+
+    <h2>Cinco lecturas recomendadas</h2>
+    <div class="caja">
+      <ul>
+        <li><a href="https://www.anthropic.com/research/project-vend-1" target="_blank" rel="noopener">Project Vend (Anthropic)</a> — qué pasa cuando dejas a una IA administrar un negocio real; divertido y aleccionador sobre los límites de los agentes.</li>
+        <li><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">The State of AI (McKinsey, 2025)</a> — la encuesta global sobre adopción y valor de la IA citada en la charla.</li>
+        <li><a href="https://hbr.org/topic/subject/generative-ai" target="_blank" rel="noopener">Harvard Business Review — IA generativa</a> — colección de casos de gestión, en inglés accesible.</li>
+        <li><a href="https://www.anthropic.com/news/how-anthropic-teams-use-claude-code" target="_blank" rel="noopener">Cómo los equipos usan Claude Code (Anthropic)</a> — ejemplos concretos de "vibe coding" profesional en equipos no técnicos.</li>
+        <li><a href="https://centromexicodigital.mx" target="_blank" rel="noopener">Centro México Digital</a> — datos de adopción digital y de IA en empresas mexicanas.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    Benjamín Oliva Vázquez · Analítica Boutique SC ·
+    <a href="mailto:benjamin@analiticaboutique.com.mx">benjamin@analiticaboutique.com.mx</a>
+  </div>
+</footer>
+
+</body>
+</html>

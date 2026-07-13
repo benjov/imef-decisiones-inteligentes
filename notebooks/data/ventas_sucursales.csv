@@ -1,0 +1,361 @@
+fecha,sucursal,producto,unidades,precio_unitario,costo_unitario
+2024-07-01,Cuernavaca Centro,Kit Industrial,95,5292.64,3106.29
+2024-07-01,Cuernavaca Centro,Línea Hogar,47,1460.55,895.25
+2024-07-01,Cuernavaca Centro,Refacciones,51,893.02,517.1
+2024-07-01,Cuernavaca Centro,Consumibles,57,323.25,207.99
+2024-07-01,Cuernavaca Norte,Kit Industrial,77,5254.49,3103.16
+2024-07-01,Cuernavaca Norte,Línea Hogar,36,1431.31,895.16
+2024-07-01,Cuernavaca Norte,Refacciones,45,867.39,522.28
+2024-07-01,Cuernavaca Norte,Consumibles,33,319.02,210.23
+2024-07-01,Jiutepec,Kit Industrial,80,5092.57,3145.63
+2024-07-01,Jiutepec,Línea Hogar,36,1458.94,901.07
+2024-07-01,Jiutepec,Refacciones,38,877.97,527.56
+2024-07-01,Jiutepec,Consumibles,33,325.43,208.65
+2024-07-01,Temixco,Kit Industrial,42,5116.39,3114.11
+2024-07-01,Temixco,Línea Hogar,32,1448.32,898.23
+2024-07-01,Temixco,Refacciones,21,876.97,511.72
+2024-07-01,Temixco,Consumibles,22,321.09,212.77
+2024-07-01,Cuautla,Kit Industrial,74,5154.25,3144.49
+2024-07-01,Cuautla,Línea Hogar,33,1446.71,903.89
+2024-07-01,Cuautla,Refacciones,32,881.46,517.88
+2024-07-01,Cuautla,Consumibles,25,312.59,211.37
+2024-08-01,Cuernavaca Centro,Kit Industrial,76,5153.51,3100.26
+2024-08-01,Cuernavaca Centro,Línea Hogar,56,1453.92,894.1
+2024-08-01,Cuernavaca Centro,Refacciones,59,900.85,522.57
+2024-08-01,Cuernavaca Centro,Consumibles,57,325.96,212.37
+2024-08-01,Cuernavaca Norte,Kit Industrial,73,5246.67,3116.11
+2024-08-01,Cuernavaca Norte,Línea Hogar,34,1465.24,887.8
+2024-08-01,Cuernavaca Norte,Refacciones,36,897.21,524.37
+2024-08-01,Cuernavaca Norte,Consumibles,51,318.7,207.58
+2024-08-01,Jiutepec,Kit Industrial,56,5207.96,3102.45
+2024-08-01,Jiutepec,Línea Hogar,43,1442.14,903.17
+2024-08-01,Jiutepec,Refacciones,30,885.94,520.02
+2024-08-01,Jiutepec,Consumibles,32,318.87,209.61
+2024-08-01,Temixco,Kit Industrial,40,5338.16,3096.95
+2024-08-01,Temixco,Línea Hogar,25,1404.38,891.95
+2024-08-01,Temixco,Refacciones,25,870.95,527.18
+2024-08-01,Temixco,Consumibles,25,326.18,210.13
+2024-08-01,Cuautla,Kit Industrial,51,5193.07,3100.12
+2024-08-01,Cuautla,Línea Hogar,41,1399.55,881.99
+2024-08-01,Cuautla,Refacciones,29,880.19,523.59
+2024-08-01,Cuautla,Consumibles,34,318.16,212.14
+2024-09-01,Cuernavaca Centro,Kit Industrial,90,5214.36,3129.84
+2024-09-01,Cuernavaca Centro,Línea Hogar,50,1437.79,906.28
+2024-09-01,Cuernavaca Centro,Refacciones,49,880.02,527.66
+2024-09-01,Cuernavaca Centro,Consumibles,29,313.2,207.51
+2024-09-01,Cuernavaca Norte,Kit Industrial,63,5180.14,3053.27
+2024-09-01,Cuernavaca Norte,Línea Hogar,35,1431.28,922.12
+2024-09-01,Cuernavaca Norte,Refacciones,53,874.56,518.11
+2024-09-01,Cuernavaca Norte,Consumibles,34,310.84,209.75
+2024-09-01,Jiutepec,Kit Industrial,49,5193.38,3050.39
+2024-09-01,Jiutepec,Línea Hogar,32,1453.23,903.3
+2024-09-01,Jiutepec,Refacciones,39,862.57,524.44
+2024-09-01,Jiutepec,Consumibles,32,323.04,209.98
+2024-09-01,Temixco,Kit Industrial,33,5175.34,3111.33
+2024-09-01,Temixco,Línea Hogar,29,1446.93,913.79
+2024-09-01,Temixco,Refacciones,30,876.61,523.9
+2024-09-01,Temixco,Consumibles,34,329.41,207.42
+2024-09-01,Cuautla,Kit Industrial,44,5315.82,3067.19
+2024-09-01,Cuautla,Línea Hogar,25,1439.43,903.78
+2024-09-01,Cuautla,Refacciones,31,871.41,516.49
+2024-09-01,Cuautla,Consumibles,28,315.78,214.79
+2024-10-01,Cuernavaca Centro,Kit Industrial,78,5269.17,3084.84
+2024-10-01,Cuernavaca Centro,Línea Hogar,45,1434.48,876.13
+2024-10-01,Cuernavaca Centro,Refacciones,36,856.1,508.3
+2024-10-01,Cuernavaca Centro,Consumibles,38,326.36,209.91
+2024-10-01,Cuernavaca Norte,Kit Industrial,80,5232.06,3124.26
+2024-10-01,Cuernavaca Norte,Línea Hogar,35,1461.4,906.56
+2024-10-01,Cuernavaca Norte,Refacciones,37,887.39,522.94
+2024-10-01,Cuernavaca Norte,Consumibles,38,314.61,207.51
+2024-10-01,Jiutepec,Kit Industrial,60,5225.51,3075.43
+2024-10-01,Jiutepec,Línea Hogar,37,1462.41,905.56
+2024-10-01,Jiutepec,Refacciones,46,896.86,514.79
+2024-10-01,Jiutepec,Consumibles,47,317.45,212.19
+2024-10-01,Temixco,Kit Industrial,43,5167.85,3043.96
+2024-10-01,Temixco,Línea Hogar,25,1416.08,908.71
+2024-10-01,Temixco,Refacciones,32,869.48,521.57
+2024-10-01,Temixco,Consumibles,23,316.98,211.63
+2024-10-01,Cuautla,Kit Industrial,51,5335.69,3085.05
+2024-10-01,Cuautla,Línea Hogar,37,1452.12,907.16
+2024-10-01,Cuautla,Refacciones,30,879.35,519.4
+2024-10-01,Cuautla,Consumibles,28,323.18,211.37
+2024-11-01,Cuernavaca Centro,Kit Industrial,80,5319.88,3144.93
+2024-11-01,Cuernavaca Centro,Línea Hogar,43,1458.11,894.39
+2024-11-01,Cuernavaca Centro,Refacciones,45,872.08,528.42
+2024-11-01,Cuernavaca Centro,Consumibles,48,318.95,212.51
+2024-11-01,Cuernavaca Norte,Kit Industrial,43,5042.9,3124.67
+2024-11-01,Cuernavaca Norte,Línea Hogar,42,1455.45,888.06
+2024-11-01,Cuernavaca Norte,Refacciones,41,906.45,524.29
+2024-11-01,Cuernavaca Norte,Consumibles,42,317.89,209.17
+2024-11-01,Jiutepec,Kit Industrial,40,5220.1,3126.21
+2024-11-01,Jiutepec,Línea Hogar,28,1435.61,889.58
+2024-11-01,Jiutepec,Refacciones,32,880.71,509.16
+2024-11-01,Jiutepec,Consumibles,41,323.62,209.47
+2024-11-01,Temixco,Kit Industrial,25,5122.28,3138.22
+2024-11-01,Temixco,Línea Hogar,14,1442.44,889.38
+2024-11-01,Temixco,Refacciones,29,871.09,522.1
+2024-11-01,Temixco,Consumibles,28,328.81,209.57
+2024-11-01,Cuautla,Kit Industrial,54,5084.17,3136.9
+2024-11-01,Cuautla,Línea Hogar,28,1437.8,899.8
+2024-11-01,Cuautla,Refacciones,24,883.02,525.03
+2024-11-01,Cuautla,Consumibles,33,312.37,209.74
+2024-12-01,Cuernavaca Centro,Kit Industrial,115,5053.52,3066.68
+2024-12-01,Cuernavaca Centro,Línea Hogar,73,1455.87,903.71
+2024-12-01,Cuernavaca Centro,Refacciones,83,886.18,523.42
+2024-12-01,Cuernavaca Centro,Consumibles,92,318.97,208.32
+2024-12-01,Cuernavaca Norte,Kit Industrial,103,5234.24,3083.67
+2024-12-01,Cuernavaca Norte,Línea Hogar,50,1500.24,902.94
+2024-12-01,Cuernavaca Norte,Refacciones,53,892.09,519.43
+2024-12-01,Cuernavaca Norte,Consumibles,58,322.7,207.29
+2024-12-01,Jiutepec,Kit Industrial,93,5349.21,3114.45
+2024-12-01,Jiutepec,Línea Hogar,52,1438.97,896.31
+2024-12-01,Jiutepec,Refacciones,53,875.01,524.76
+2024-12-01,Jiutepec,Consumibles,40,324.14,209.2
+2024-12-01,Temixco,Kit Industrial,65,5112.09,3141.19
+2024-12-01,Temixco,Línea Hogar,46,1470.87,886.37
+2024-12-01,Temixco,Refacciones,43,885.34,511.65
+2024-12-01,Temixco,Consumibles,38,321.75,211.17
+2024-12-01,Cuautla,Kit Industrial,77,5222.72,3145.68
+2024-12-01,Cuautla,Línea Hogar,55,1387.64,897.14
+2024-12-01,Cuautla,Refacciones,45,856.87,520.49
+2024-12-01,Cuautla,Consumibles,56,314.78,210.71
+2025-01-01,Cuernavaca Centro,Kit Industrial,59,5147.59,3145.8
+2025-01-01,Cuernavaca Centro,Línea Hogar,39,1460.05,883.16
+2025-01-01,Cuernavaca Centro,Refacciones,55,887.96,519.05
+2025-01-01,Cuernavaca Centro,Consumibles,47,313.23,212.48
+2025-01-01,Cuernavaca Norte,Kit Industrial,63,5184.08,3084.76
+2025-01-01,Cuernavaca Norte,Línea Hogar,37,1465.11,902.3
+2025-01-01,Cuernavaca Norte,Refacciones,46,879.88,522.67
+2025-01-01,Cuernavaca Norte,Consumibles,39,330.7,206.71
+2025-01-01,Jiutepec,Kit Industrial,74,5306.7,3073.58
+2025-01-01,Jiutepec,Línea Hogar,52,1471.65,908.74
+2025-01-01,Jiutepec,Refacciones,38,877.13,518.91
+2025-01-01,Jiutepec,Consumibles,41,326.73,210.38
+2025-01-01,Temixco,Kit Industrial,36,5264.31,3128.56
+2025-01-01,Temixco,Línea Hogar,29,1466.21,897.56
+2025-01-01,Temixco,Refacciones,22,868.54,511.5
+2025-01-01,Temixco,Consumibles,27,319.6,209.08
+2025-01-01,Cuautla,Kit Industrial,27,5102.71,3134.75
+2025-01-01,Cuautla,Línea Hogar,28,1457.84,887.48
+2025-01-01,Cuautla,Refacciones,39,878.1,521.51
+2025-01-01,Cuautla,Consumibles,44,327.28,209.36
+2025-02-01,Cuernavaca Centro,Kit Industrial,60,5174.61,3115.81
+2025-02-01,Cuernavaca Centro,Línea Hogar,41,1441.4,913.2
+2025-02-01,Cuernavaca Centro,Refacciones,41,910.35,520.47
+2025-02-01,Cuernavaca Centro,Consumibles,53,321.72,212.02
+2025-02-01,Cuernavaca Norte,Kit Industrial,59,5133.41,3114.25
+2025-02-01,Cuernavaca Norte,Línea Hogar,48,1450.88,888.42
+2025-02-01,Cuernavaca Norte,Refacciones,32,861.16,510.81
+2025-02-01,Cuernavaca Norte,Consumibles,42,325.4,209.97
+2025-02-01,Jiutepec,Kit Industrial,40,5185.12,3094.95
+2025-02-01,Jiutepec,Línea Hogar,52,1418.31,896.48
+2025-02-01,Jiutepec,Refacciones,49,885.94,522.93
+2025-02-01,Jiutepec,Consumibles,39,321.58,211.63
+2025-02-01,Temixco,Kit Industrial,37,5268.49,3057.44
+2025-02-01,Temixco,Línea Hogar,27,1453.89,894.45
+2025-02-01,Temixco,Refacciones,26,871.78,514.43
+2025-02-01,Temixco,Consumibles,25,314.7,210.68
+2025-02-01,Cuautla,Kit Industrial,42,5255.53,3063.37
+2025-02-01,Cuautla,Línea Hogar,29,1436.41,911.93
+2025-02-01,Cuautla,Refacciones,33,877.21,522.59
+2025-02-01,Cuautla,Consumibles,21,319.79,214.19
+2025-03-01,Cuernavaca Centro,Kit Industrial,66,5205.3,3116.99
+2025-03-01,Cuernavaca Centro,Línea Hogar,46,1406.56,884.86
+2025-03-01,Cuernavaca Centro,Refacciones,42,870.56,526.82
+2025-03-01,Cuernavaca Centro,Consumibles,38,310.71,207.34
+2025-03-01,Cuernavaca Norte,Kit Industrial,37,5181.74,3094.16
+2025-03-01,Cuernavaca Norte,Línea Hogar,38,1473.47,910.79
+2025-03-01,Cuernavaca Norte,Refacciones,40,851.82,523.21
+2025-03-01,Cuernavaca Norte,Consumibles,45,321.49,212.06
+2025-03-01,Jiutepec,Kit Industrial,51,5356.68,3070.26
+2025-03-01,Jiutepec,Línea Hogar,44,1413.3,891.63
+2025-03-01,Jiutepec,Refacciones,49,876.56,524.37
+2025-03-01,Jiutepec,Consumibles,41,319.5,212.86
+2025-03-01,Temixco,Kit Industrial,40,5061.1,3075.1
+2025-03-01,Temixco,Línea Hogar,28,1458.6,885.9
+2025-03-01,Temixco,Refacciones,23,872.32,518.1
+2025-03-01,Temixco,Consumibles,20,316.98,208.47
+2025-03-01,Cuautla,Kit Industrial,57,5263.11,3095.48
+2025-03-01,Cuautla,Línea Hogar,30,1453.04,892.65
+2025-03-01,Cuautla,Refacciones,26,867.59,516.7
+2025-03-01,Cuautla,Consumibles,26,320.78,211.53
+2025-04-01,Cuernavaca Centro,Kit Industrial,47,5201.96,3093.18
+2025-04-01,Cuernavaca Centro,Línea Hogar,41,1449.72,886.92
+2025-04-01,Cuernavaca Centro,Refacciones,31,880.39,525.35
+2025-04-01,Cuernavaca Centro,Consumibles,25,321.66,212.5
+2025-04-01,Cuernavaca Norte,Kit Industrial,65,5242.92,3078.2
+2025-04-01,Cuernavaca Norte,Línea Hogar,41,1414.75,878.9
+2025-04-01,Cuernavaca Norte,Refacciones,48,867.0,517.63
+2025-04-01,Cuernavaca Norte,Consumibles,32,313.23,209.63
+2025-04-01,Jiutepec,Kit Industrial,56,5229.48,3114.03
+2025-04-01,Jiutepec,Línea Hogar,42,1455.19,914.2
+2025-04-01,Jiutepec,Refacciones,33,879.27,525.89
+2025-04-01,Jiutepec,Consumibles,48,313.18,209.34
+2025-04-01,Temixco,Kit Industrial,51,5239.63,3106.05
+2025-04-01,Temixco,Línea Hogar,25,1441.65,902.59
+2025-04-01,Temixco,Refacciones,25,879.44,520.41
+2025-04-01,Temixco,Consumibles,23,322.55,216.12
+2025-04-01,Cuautla,Kit Industrial,37,5225.27,3076.43
+2025-04-01,Cuautla,Línea Hogar,35,1451.01,906.86
+2025-04-01,Cuautla,Refacciones,38,882.54,525.89
+2025-04-01,Cuautla,Consumibles,20,327.63,210.79
+2025-05-01,Cuernavaca Centro,Kit Industrial,72,5104.85,3074.25
+2025-05-01,Cuernavaca Centro,Línea Hogar,39,1449.63,902.55
+2025-05-01,Cuernavaca Centro,Refacciones,45,856.7,525.06
+2025-05-01,Cuernavaca Centro,Consumibles,38,319.02,206.91
+2025-05-01,Cuernavaca Norte,Kit Industrial,72,5011.7,3120.1
+2025-05-01,Cuernavaca Norte,Línea Hogar,31,1451.16,898.93
+2025-05-01,Cuernavaca Norte,Refacciones,49,877.64,516.39
+2025-05-01,Cuernavaca Norte,Consumibles,38,326.11,211.13
+2025-05-01,Jiutepec,Kit Industrial,61,5181.56,3051.42
+2025-05-01,Jiutepec,Línea Hogar,43,1411.72,906.77
+2025-05-01,Jiutepec,Refacciones,41,911.51,514.28
+2025-05-01,Jiutepec,Consumibles,40,328.63,212.5
+2025-05-01,Temixco,Kit Industrial,37,5217.47,3100.06
+2025-05-01,Temixco,Línea Hogar,27,1434.8,899.2
+2025-05-01,Temixco,Refacciones,19,881.78,522.34
+2025-05-01,Temixco,Consumibles,25,312.25,212.08
+2025-05-01,Cuautla,Kit Industrial,54,5143.37,3091.3
+2025-05-01,Cuautla,Línea Hogar,24,1427.7,895.16
+2025-05-01,Cuautla,Refacciones,38,871.56,523.33
+2025-05-01,Cuautla,Consumibles,29,321.19,209.7
+2025-06-01,Cuernavaca Centro,Kit Industrial,68,5158.28,3051.25
+2025-06-01,Cuernavaca Centro,Línea Hogar,29,1438.43,888.76
+2025-06-01,Cuernavaca Centro,Refacciones,39,873.85,532.35
+2025-06-01,Cuernavaca Centro,Consumibles,27,320.98,207.63
+2025-06-01,Cuernavaca Norte,Kit Industrial,61,5211.03,3027.91
+2025-06-01,Cuernavaca Norte,Línea Hogar,43,1491.39,895.92
+2025-06-01,Cuernavaca Norte,Refacciones,43,893.53,519.15
+2025-06-01,Cuernavaca Norte,Consumibles,37,309.08,211.35
+2025-06-01,Jiutepec,Kit Industrial,64,5121.01,3103.92
+2025-06-01,Jiutepec,Línea Hogar,37,1438.51,905.46
+2025-06-01,Jiutepec,Refacciones,32,893.82,512.73
+2025-06-01,Jiutepec,Consumibles,36,329.23,212.37
+2025-06-01,Temixco,Kit Industrial,43,5126.64,3083.59
+2025-06-01,Temixco,Línea Hogar,26,1450.82,899.18
+2025-06-01,Temixco,Refacciones,26,877.17,512.5
+2025-06-01,Temixco,Consumibles,24,324.39,207.13
+2025-06-01,Cuautla,Kit Industrial,50,5136.06,3103.45
+2025-06-01,Cuautla,Línea Hogar,30,1482.13,904.56
+2025-06-01,Cuautla,Refacciones,25,888.86,515.97
+2025-06-01,Cuautla,Consumibles,29,321.51,208.97
+2025-07-01,Cuernavaca Centro,Kit Industrial,66,5139.59,3080.81
+2025-07-01,Cuernavaca Centro,Línea Hogar,32,1437.7,909.89
+2025-07-01,Cuernavaca Centro,Refacciones,40,902.57,531.79
+2025-07-01,Cuernavaca Centro,Consumibles,30,320.34,207.53
+2025-07-01,Cuernavaca Norte,Kit Industrial,58,5150.85,3067.23
+2025-07-01,Cuernavaca Norte,Línea Hogar,34,1446.86,889.05
+2025-07-01,Cuernavaca Norte,Refacciones,47,867.89,534.61
+2025-07-01,Cuernavaca Norte,Consumibles,38,320.35,207.28
+2025-07-01,Jiutepec,Kit Industrial,84,5287.32,3109.2
+2025-07-01,Jiutepec,Línea Hogar,32,1454.58,889.91
+2025-07-01,Jiutepec,Refacciones,51,890.68,520.5
+2025-07-01,Jiutepec,Consumibles,25,315.28,211.44
+2025-07-01,Temixco,Kit Industrial,50,5286.52,3050.65
+2025-07-01,Temixco,Línea Hogar,27,1472.09,885.07
+2025-07-01,Temixco,Refacciones,26,883.61,518.44
+2025-07-01,Temixco,Consumibles,18,318.44,209.31
+2025-07-01,Cuautla,Kit Industrial,50,5156.05,3086.27
+2025-07-01,Cuautla,Línea Hogar,32,1459.62,897.26
+2025-07-01,Cuautla,Refacciones,30,881.22,510.01
+2025-07-01,Cuautla,Consumibles,34,320.0,210.08
+2025-08-01,Cuernavaca Centro,Kit Industrial,65,5047.68,3038.81
+2025-08-01,Cuernavaca Centro,Línea Hogar,36,1449.85,901.53
+2025-08-01,Cuernavaca Centro,Refacciones,32,888.77,524.85
+2025-08-01,Cuernavaca Centro,Consumibles,38,318.75,205.57
+2025-08-01,Cuernavaca Norte,Kit Industrial,75,5295.29,3119.98
+2025-08-01,Cuernavaca Norte,Línea Hogar,35,1464.66,907.74
+2025-08-01,Cuernavaca Norte,Refacciones,52,868.44,518.82
+2025-08-01,Cuernavaca Norte,Consumibles,46,320.28,207.65
+2025-08-01,Jiutepec,Kit Industrial,71,5245.14,3102.73
+2025-08-01,Jiutepec,Línea Hogar,43,1444.37,913.3
+2025-08-01,Jiutepec,Refacciones,36,872.25,520.06
+2025-08-01,Jiutepec,Consumibles,48,312.81,207.25
+2025-08-01,Temixco,Kit Industrial,28,5202.55,3065.33
+2025-08-01,Temixco,Línea Hogar,24,1464.38,894.23
+2025-08-01,Temixco,Refacciones,27,876.05,523.49
+2025-08-01,Temixco,Consumibles,28,316.68,209.65
+2025-08-01,Cuautla,Kit Industrial,60,5230.68,3056.69
+2025-08-01,Cuautla,Línea Hogar,35,1426.41,912.71
+2025-08-01,Cuautla,Refacciones,37,883.83,520.82
+2025-08-01,Cuautla,Consumibles,31,323.26,209.22
+2025-09-01,Cuernavaca Centro,Kit Industrial,57,5268.01,3082.58
+2025-09-01,Cuernavaca Centro,Línea Hogar,31,1424.02,890.42
+2025-09-01,Cuernavaca Centro,Refacciones,24,889.63,529.41
+2025-09-01,Cuernavaca Centro,Consumibles,42,312.19,211.52
+2025-09-01,Cuernavaca Norte,Kit Industrial,81,5164.37,3103.14
+2025-09-01,Cuernavaca Norte,Línea Hogar,28,1455.8,890.43
+2025-09-01,Cuernavaca Norte,Refacciones,43,859.39,522.82
+2025-09-01,Cuernavaca Norte,Consumibles,48,316.24,207.61
+2025-09-01,Jiutepec,Kit Industrial,45,5179.22,3081.97
+2025-09-01,Jiutepec,Línea Hogar,32,1459.85,895.95
+2025-09-01,Jiutepec,Refacciones,35,872.68,525.57
+2025-09-01,Jiutepec,Consumibles,46,319.38,211.3
+2025-09-01,Temixco,Kit Industrial,34,5202.52,3104.57
+2025-09-01,Temixco,Línea Hogar,24,1459.47,892.98
+2025-09-01,Temixco,Refacciones,28,887.28,504.83
+2025-09-01,Temixco,Consumibles,31,305.37,208.71
+2025-09-01,Cuautla,Kit Industrial,60,5175.25,3054.55
+2025-09-01,Cuautla,Línea Hogar,26,1472.34,882.71
+2025-09-01,Cuautla,Refacciones,38,879.27,513.8
+2025-09-01,Cuautla,Consumibles,29,315.12,211.82
+2025-10-01,Cuernavaca Centro,Kit Industrial,59,5065.91,3087.49
+2025-10-01,Cuernavaca Centro,Línea Hogar,28,1478.13,887.85
+2025-10-01,Cuernavaca Centro,Refacciones,41,879.56,513.96
+2025-10-01,Cuernavaca Centro,Consumibles,29,316.15,207.32
+2025-10-01,Cuernavaca Norte,Kit Industrial,67,5104.22,3032.41
+2025-10-01,Cuernavaca Norte,Línea Hogar,39,1410.79,893.23
+2025-10-01,Cuernavaca Norte,Refacciones,35,868.5,530.41
+2025-10-01,Cuernavaca Norte,Consumibles,42,321.18,206.27
+2025-10-01,Jiutepec,Kit Industrial,61,5216.79,3068.24
+2025-10-01,Jiutepec,Línea Hogar,49,1423.84,897.42
+2025-10-01,Jiutepec,Refacciones,39,882.17,516.67
+2025-10-01,Jiutepec,Consumibles,41,318.87,208.46
+2025-10-01,Temixco,Kit Industrial,45,5218.59,3097.25
+2025-10-01,Temixco,Línea Hogar,24,1467.32,897.88
+2025-10-01,Temixco,Refacciones,25,881.38,528.82
+2025-10-01,Temixco,Consumibles,20,323.7,206.02
+2025-10-01,Cuautla,Kit Industrial,53,5322.86,3115.15
+2025-10-01,Cuautla,Línea Hogar,33,1437.81,900.28
+2025-10-01,Cuautla,Refacciones,31,869.63,518.49
+2025-10-01,Cuautla,Consumibles,33,316.32,208.31
+2025-11-01,Cuernavaca Centro,Kit Industrial,40,5230.48,3116.91
+2025-11-01,Cuernavaca Centro,Línea Hogar,33,1470.99,900.79
+2025-11-01,Cuernavaca Centro,Refacciones,34,884.01,519.52
+2025-11-01,Cuernavaca Centro,Consumibles,29,330.63,209.05
+2025-11-01,Cuernavaca Norte,Kit Industrial,59,5233.85,3107.81
+2025-11-01,Cuernavaca Norte,Línea Hogar,32,1474.42,899.15
+2025-11-01,Cuernavaca Norte,Refacciones,34,895.69,523.25
+2025-11-01,Cuernavaca Norte,Consumibles,33,328.53,211.38
+2025-11-01,Jiutepec,Kit Industrial,69,5324.04,3104.94
+2025-11-01,Jiutepec,Línea Hogar,43,1435.64,905.24
+2025-11-01,Jiutepec,Refacciones,46,880.19,515.89
+2025-11-01,Jiutepec,Consumibles,44,319.66,207.2
+2025-11-01,Temixco,Kit Industrial,32,5244.08,3019.34
+2025-11-01,Temixco,Línea Hogar,27,1439.6,911.77
+2025-11-01,Temixco,Refacciones,24,888.71,517.94
+2025-11-01,Temixco,Consumibles,27,323.54,209.03
+2025-11-01,Cuautla,Kit Industrial,59,5122.49,3109.13
+2025-11-01,Cuautla,Línea Hogar,37,1464.36,917.25
+2025-11-01,Cuautla,Refacciones,28,861.8,514.83
+2025-11-01,Cuautla,Consumibles,35,322.39,210.21
+2025-12-01,Cuernavaca Centro,Kit Industrial,60,5259.82,3062.03
+2025-12-01,Cuernavaca Centro,Línea Hogar,54,1512.15,903.3
+2025-12-01,Cuernavaca Centro,Refacciones,50,873.49,510.59
+2025-12-01,Cuernavaca Centro,Consumibles,41,314.75,206.96
+2025-12-01,Cuernavaca Norte,Kit Industrial,123,5221.28,3111.77
+2025-12-01,Cuernavaca Norte,Línea Hogar,57,1446.24,908.68
+2025-12-01,Cuernavaca Norte,Refacciones,60,887.01,518.98
+2025-12-01,Cuernavaca Norte,Consumibles,57,313.25,205.85
+2025-12-01,Jiutepec,Kit Industrial,98,5204.41,3060.13
+2025-12-01,Jiutepec,Línea Hogar,63,1451.17,880.6
+2025-12-01,Jiutepec,Refacciones,54,885.38,522.01
+2025-12-01,Jiutepec,Consumibles,52,320.76,212.15
+2025-12-01,Temixco,Kit Industrial,69,5192.57,3085.49
+2025-12-01,Temixco,Línea Hogar,34,1460.18,901.76
+2025-12-01,Temixco,Refacciones,42,881.74,524.26
+2025-12-01,Temixco,Consumibles,39,323.77,211.83
+2025-12-01,Cuautla,Kit Industrial,65,5058.96,3147.85
+2025-12-01,Cuautla,Línea Hogar,48,1412.71,893.58
+2025-12-01,Cuautla,Refacciones,52,876.31,517.34
+2025-12-01,Cuautla,Consumibles,57,314.97,208.32

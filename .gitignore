@@ -1,0 +1,15 @@
+# Secretos — NUNCA al repo (el repo es público)
+.streamlit/secrets.toml
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/

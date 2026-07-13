@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "de": "Laura Mendoza <lmendoza@empresa.mx>",
+    "asunto": "Resumen de desempeño Q2 para el comité",
+    "fecha": "Viernes 17:58",
+    "cuerpo": "Buenas tardes,\n\nNecesito para mañana un resumen del desempeño de Q2 con riesgos y recomendaciones para el comité. Una página máximo.\n\nGracias,\nLaura Mendoza\nDirectora General"
+  },
+  {
+    "id": 2,
+    "de": "Recursos Humanos <rh@empresa.mx>",
+    "asunto": "Recordatorio: encuesta de clima laboral",
+    "fecha": "Viernes 16:40",
+    "cuerpo": "Recuerda contestar la encuesta de clima laboral antes del lunes."
+  },
+  {
+    "id": 3,
+    "de": "Proveedor Logístico <facturacion@translog.mx>",
+    "asunto": "Factura F-20449 disponible",
+    "fecha": "Viernes 15:12",
+    "cuerpo": "Estimado cliente, su factura del periodo está disponible en el portal."
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "Q1": {
+    "trimestre": "Q1",
+    "anio": 2026,
+    "moneda": "MXN",
+    "por_categoria": [
+      {
+        "categoria": "Nómina",
+        "gasto": 5100000.0
+      },
+      {
+        "categoria": "Logística",
+        "gasto": 1950000.0
+      },
+      {
+        "categoria": "Marketing",
+        "gasto": 880000.0
+      },
+      {
+        "categoria": "Tecnología",
+        "gasto": 640000
+      },
+      {
+        "categoria": "Otros",
+        "gasto": 510000
+      }
+    ],
+    "total": 9080000.0
+  },
+  "Q2": {
+    "trimestre": "Q2",
+    "anio": 2026,
+    "moneda": "MXN",
+    "por_categoria": [
+      {
+        "categoria": "Nómina",
+        "gasto": 5457000.0
+      },
+      {
+        "categoria": "Logística",
+        "gasto": 2379000.0
+      },
+      {
+        "categoria": "Marketing",
+        "gasto": 941600.0
+      },
+      {
+        "categoria": "Tecnología",
+        "gasto": 640000
+      },
+      {
+        "categoria": "Otros",
+        "gasto": 510000
+      }
+    ],
+    "total": 9927600.0
+  }
+}

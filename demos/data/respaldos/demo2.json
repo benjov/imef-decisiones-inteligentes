@@ -1,0 +1,35 @@
+{
+  "interpretacion": "Me están pidiendo un resumen ejecutivo del desempeño del segundo trimestre (Q2), con riesgos y recomendaciones, dirigido al comité. El entregable es para mañana y debe caber en una página. Para elaborarlo necesito las cifras de ventas y gastos de Q2 y, para poner las variaciones en contexto, también las del trimestre anterior (Q1). Voy a consultar ambas fuentes y con eso redactar el reporte.",
+  "herramientas": [
+    {
+      "nombre": "consultar_ventas",
+      "args": {
+        "trimestre": "Q2"
+      },
+      "resultado": "{\"trimestre\": \"Q2\", \"anio\": 2026, \"moneda\": \"MXN\", \"por_linea\": [{\"linea\": \"Producto A\", \"ventas\": 12894128.0}, {\"linea\": \"Producto B\", \"ventas\": 7487396.0}, {\"linea\": \"Servicios\", \"ventas\": 5135524.0}], \"total\": 25517048.0}"
+    },
+    {
+      "nombre": "consultar_ventas",
+      "args": {
+        "trimestre": "Q1"
+      },
+      "resultado": "{\"trimestre\": \"Q1\", \"anio\": 2026, \"moneda\": \"MXN\", \"por_linea\": [{\"linea\": \"Producto A\", \"ventas\": 12755266.0}, {\"linea\": \"Producto B\", \"ventas\": 8333216.0}, {\"linea\": \"Servicios\", \"ventas\": 4765014.0}], \"total\": 25853496.0}"
+    },
+    {
+      "nombre": "consultar_gastos",
+      "args": {
+        "trimestre": "Q2"
+      },
+      "resultado": "{\"trimestre\": \"Q2\", \"anio\": 2026, \"moneda\": \"MXN\", \"por_categoria\": [{\"categoria\": \"Nómina\", \"gasto\": 5457000.0}, {\"categoria\": \"Logística\", \"gasto\": 2379000.0}, {\"categoria\": \"Marketing\", \"gasto\": 941600.0}, {\"categoria\": \"Tecnología\", \"gasto\": 640000}, {\"categoria\": \"Otros\", \"gasto\": 510000}], \"total\": 9927600.0}"
+    },
+    {
+      "nombre": "consultar_gastos",
+      "args": {
+        "trimestre": "Q1"
+      },
+      "resultado": "{\"trimestre\": \"Q1\", \"anio\": 2026, \"moneda\": \"MXN\", \"por_categoria\": [{\"categoria\": \"Nómina\", \"gasto\": 5100000.0}, {\"categoria\": \"Logística\", \"gasto\": 1950000.0}, {\"categoria\": \"Marketing\", \"gasto\": 880000.0}, {\"categoria\": \"Tecnología\", \"gasto\": 640000}, {\"categoria\": \"Otros\", \"gasto\": 510000}], \"total\": 9080000.0}"
+    }
+  ],
+  "reporte": "# Desempeño Q2 2026 — Resumen para el Comité\n\n## Resumen ejecutivo\n\nEl trimestre cierra con ventas de $25.5 M, una contracción de 1.3% contra Q1, mientras los gastos crecieron 9.3% hasta $9.9 M. El resultado antes de costo de producto pasó de $16.8 M a $15.6 M (-7.1%). El trimestre no es malo por las ventas totales — es la mezcla: **Producto B cae con fuerza y la logística se encareció**.\n\n## Cifras clave\n\n| Concepto | Q1 | Q2 | Variación |\n|---|---|---|---|\n| Ventas totales | $25.9 M | $25.5 M | -1.3% |\n| · Producto A | $12.8 M | $12.9 M | +1.1% |\n| · Producto B | $8.3 M | $7.5 M | -10.1% |\n| · Servicios | $4.8 M | $5.1 M | +7.8% |\n| Gastos totales | $9.1 M | $9.9 M | +9.3% |\n| · Logística | $1.9 M | $2.4 M | +22.0% |\n\n## Riesgos detectados\n\n1. **Producto B** pierde 10.1% de ventas en un trimestre; si el origen es la pérdida de un cliente relevante, el efecto será recurrente.\n2. **Logística** crece 22.0% y explica la mayor parte del alza de gastos; erosiona el margen de todas las líneas.\n3. La combinación de ambos comprime el resultado 7.1% en un solo trimestre.\n\n## Recomendaciones\n\n1. **Diagnóstico comercial de Producto B esta semana:** confirmar si la caída es pérdida de cliente, precio o demanda, y definir plan de recuperación con responsable y fecha.\n2. **Renegociar tarifas logísticas** o licitar el servicio: regresar al nivel de Q1 liberaría ~$0.4 M por trimestre.\n3. **Apoyarse en Servicios** (creció +7.8%): evaluar si hay capacidad de acelerar esa línea para compensar Producto B en Q3.",
+  "correo_respuesta": "Asunto: RE: Resumen de desempeño Q2 para el comité\n\nEstimada Laura:\n\nEl reporte de desempeño de Q2 está listo (adjunto, una página). Los tres puntos que el comité debe conocer:\n\n• Las ventas del trimestre fueron $25.5 M (-1.3% vs Q1); la caída se concentra en Producto B (-10.1%).\n• Los gastos crecieron +9.3%, impulsados por logística (+22.0%).\n• Recomendamos un diagnóstico comercial inmediato de Producto B y renegociar las tarifas logísticas; Servicios (+7.8%) es la palanca positiva del trimestre.\n\nQuedamos atentos a los comentarios del comité.\n\nSaludos cordiales,\nEquipo de Análisis"
+}

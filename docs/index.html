@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decisiones Inteligentes: IA y el Futuro de las Empresas · IMEF Morelos</title>
+<meta name="description" content="Conferencia de Benjamín Oliva Vázquez para IMEF Morelos — demos en vivo de IA aplicada a finanzas y negocios.">
+<style>
+  :root {
+    --azul: #1E3A5F; --azul-claro: #2563EB; --gris: #6B7280;
+    --fondo: #F7F9FC; --blanco: #FFFFFF; --tinta: #1F2937;
+    --ambar: #B45309;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         color: var(--tinta); background: var(--fondo); line-height: 1.6; }
+  .contenedor { max-width: 1000px; margin: 0 auto; padding: 0 1.2rem; }
+
+  /* ------- hero ------- */
+  header.hero { background: linear-gradient(160deg, var(--azul) 0%, #16304e 60%, #0F2239 100%);
+                color: var(--blanco); padding: 4.5rem 0 3.5rem; text-align: center; }
+  .hero .kicker { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.9rem;
+                  color: #9DB8D9; margin-bottom: 1rem; }
+  .hero h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); line-height: 1.2; margin-bottom: 1rem; }
+  .hero h1 em { font-style: normal; color: #7FB1E8; }
+  .hero .detalle { font-size: 1.15rem; color: #C9D8EA; }
+  .hero .detalle strong { color: var(--blanco); }
+
+  section { padding: 3rem 0; }
+  h2 { font-size: 1.7rem; color: var(--azul); margin-bottom: 1.4rem; }
+
+  /* ------- agenda ------- */
+  .agenda { background: var(--blanco); border: 1px solid #E5E7EB; border-radius: 14px;
+            padding: 1.6rem 2rem; }
+  .agenda ol { list-style: none; }
+  .agenda li { padding: 0.55rem 0; border-bottom: 1px dashed #E5E7EB; display: flex; gap: 1rem; }
+  .agenda li:last-child { border-bottom: none; }
+  .agenda .hora { color: var(--gris); min-width: 4.2rem; font-variant-numeric: tabular-nums; }
+
+  /* ------- tarjetas de demos ------- */
+  .demos { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.3rem; }
+  .tarjeta { background: var(--blanco); border: 1px solid #E5E7EB; border-radius: 14px;
+             padding: 1.8rem 1.6rem; display: flex; flex-direction: column;
+             box-shadow: 0 1px 3px rgba(16,42,67,0.06); }
+  .tarjeta .icono { font-size: 2.2rem; margin-bottom: 0.6rem; }
+  .tarjeta h3 { font-size: 1.25rem; color: var(--azul); margin-bottom: 0.5rem; }
+  .tarjeta p { color: var(--gris); flex: 1; margin-bottom: 1.2rem; }
+  .boton { display: inline-block; text-align: center; background: var(--azul-claro);
+           color: var(--blanco); text-decoration: none; font-weight: 600;
+           padding: 0.75rem 1.2rem; border-radius: 10px; font-size: 1.05rem; }
+  .boton:hover { background: #1D4ED8; }
+  .boton.secundario { background: var(--blanco); color: var(--azul-claro);
+                      border: 2px solid var(--azul-claro); }
+  .boton.secundario:hover { background: #EFF4FF; }
+
+  /* ------- anuncio ------- */
+  .anuncio { background: var(--blanco); border: 2px solid var(--azul-claro); border-radius: 16px;
+             padding: 2.2rem 2rem; text-align: center; }
+  .anuncio .etiqueta { display: inline-block; background: #EFF4FF; color: var(--azul-claro);
+                       font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em;
+                       text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 999px;
+                       margin-bottom: 1rem; }
+  .anuncio h2 { margin-bottom: 0.6rem; }
+  .anuncio p { color: var(--gris); max-width: 640px; margin: 0 auto 1.4rem; }
+
+  footer { background: var(--azul); color: #C9D8EA; padding: 2rem 0; text-align: center;
+           font-size: 0.95rem; }
+  footer a { color: #7FB1E8; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- ================================================================
+     URLs DE LAS DEMOS — editar aquí y nada más.
+     Se rellenan al desplegar Streamlit Cloud y al hacer público el repo.
+================================================================ -->
+<script>
+  const URLS = {
+    demo1: "#PENDIENTE",  // ej. https://imef-demos.streamlit.app/  (Demo 1 es la página inicial)
+    demo2: "#PENDIENTE",  // ej. https://imef-demos.streamlit.app/demo2_agente
+    demo3: "https://colab.research.google.com/github/benjov/imef-decisiones-inteligentes/blob/main/notebooks/demo3_codigo_asistido.ipynb",
+    contacto: "mailto:benjamin@analiticaboutique.com.mx?subject=Quiero%20saber%20de%20los%20eventos%20de%20IA%20Agéntica",
+  };
+  document.addEventListener("DOMContentLoaded", () => {
+    for (const [id, url] of Object.entries(URLS)) {
+      document.querySelectorAll(`[data-url="${id}"]`).forEach(a => a.href = url);
+    }
+  });
+</script>
+
+<header class="hero">
+  <div class="contenedor">
+    <div class="kicker">IMEF Morelos · Cuernavaca</div>
+    <h1>Decisiones Inteligentes:<br><em>IA y el Futuro de las Empresas</em></h1>
+    <p class="detalle"><strong>Benjamín Oliva Vázquez</strong> · Socio, Analítica Boutique SC<br>
+       Jueves 16 de julio de 2026 · 17:30–19:00 h</p>
+  </div>
+</header>
+
+<section>
+  <div class="contenedor">
+    <h2>Agenda de la sesión</h2>
+    <div class="agenda">
+      <ol>
+        <li><span class="hora">17:30</span><span>Apertura: ¿quién usó IA hoy?</span></li>
+        <li><span class="hora">17:35</span><span>Panorama 2026: de la IA que conversa a la IA que ejecuta</span></li>
+        <li><span class="hora">17:44</span><span><strong>Demo en vivo:</strong> un analista financiero con IA</span></li>
+        <li><span class="hora">17:54</span><span>Los 4 frentes de valor y el ángulo del CFO: costos, riesgos y gobernanza</span></li>
+        <li><span class="hora">18:17</span><span><strong>Demo en vivo:</strong> un agente de IA de punta a punta</span></li>
+        <li><span class="hora">18:27</span><span><strong>Demo en vivo:</strong> pídele a la IA que programe por ti</span></li>
+        <li><span class="hora">18:37</span><span>¿Y el lunes qué hago? Hoja de ruta + anuncio especial</span></li>
+        <li><span class="hora">18:45</span><span>Preguntas y respuestas</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="demos" style="padding-top: 0;">
+  <div class="contenedor">
+    <h2>Las tres demos</h2>
+    <div class="demos">
+      <div class="tarjeta">
+        <div class="icono">📊</div>
+        <h3>Demo 1 · Analista financiero con IA</h3>
+        <p>La IA lee un estado de resultados crudo, encuentra las anomalías, decide qué graficar
+           y responde preguntas sobre los datos.</p>
+        <a class="boton" data-url="demo1" href="#">Abrir demo</a>
+      </div>
+      <div class="tarjeta">
+        <div class="icono">🤖</div>
+        <h3>Demo 2 · Agente de punta a punta</h3>
+        <p>De un correo del director a un reporte de comité: el agente interpreta, consulta datos,
+           redacta y deja lista la respuesta.</p>
+        <a class="boton" data-url="demo2" href="#">Abrir demo</a>
+      </div>
+      <div class="tarjeta">
+        <div class="icono">🧑‍💻</div>
+        <h3>Demo 3 · Tú también puedes programar</h3>
+        <p>Un cuaderno de Google Colab gratuito: pídele a la IA en español que analice ventas por
+           sucursal. Repítelo esta misma noche.</p>
+        <a class="boton" data-url="demo3" href="#">Abrir en Colab</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="eventos" style="padding-top: 0;">
+  <div class="contenedor">
+    <div class="anuncio">
+      <span class="etiqueta">Próximamente · Sin costo</span>
+      <h2>Eventos gratuitos de IA Agéntica</h2>
+      <p>En <strong>Analítica Boutique</strong> impartiremos talleres prácticos de IA Agéntica,
+         con el patrocinio de <strong>Anthropic</strong> — los creadores de Claude, la IA que viste
+         trabajar hoy. Escríbenos y te damos seguimiento personal para que seas de los primeros
+         en participar.</p>
+      <a class="boton" data-url="contacto" href="#">✉️ Quiero enterarme</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0; text-align: center;">
+  <div class="contenedor">
+    <a class="boton secundario" href="recursos/">📚 Glosario, checklist y lecturas recomendadas</a>
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <p><strong>Benjamín Oliva Vázquez</strong> · Analítica Boutique SC</p>
+    <p><a href="mailto:benjamin@analiticaboutique.com.mx">benjamin@analiticaboutique.com.mx</a>
+       · <a href="https://github.com/benjov" target="_blank" rel="noopener">github.com/benjov</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

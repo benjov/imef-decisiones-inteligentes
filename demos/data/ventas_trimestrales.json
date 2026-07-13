@@ -1,0 +1,42 @@
+{
+  "Q1": {
+    "trimestre": "Q1",
+    "anio": 2026,
+    "moneda": "MXN",
+    "por_linea": [
+      {
+        "linea": "Producto A",
+        "ventas": 12755266.0
+      },
+      {
+        "linea": "Producto B",
+        "ventas": 8333216.0
+      },
+      {
+        "linea": "Servicios",
+        "ventas": 4765014.0
+      }
+    ],
+    "total": 25853496.0
+  },
+  "Q2": {
+    "trimestre": "Q2",
+    "anio": 2026,
+    "moneda": "MXN",
+    "por_linea": [
+      {
+        "linea": "Producto A",
+        "ventas": 12894128.0
+      },
+      {
+        "linea": "Producto B",
+        "ventas": 7487396.0
+      },
+      {
+        "linea": "Servicios",
+        "ventas": 5135524.0
+      }
+    ],
+    "total": 25517048.0
+  }
+}
