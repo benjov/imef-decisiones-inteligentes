@@ -9,7 +9,7 @@ import json
 
 import streamlit as st
 
-from shared import estilos, respaldo
+from shared import estilos, respaldo, texto
 from shared.cliente import obtener_cliente
 from shared.config import DIR_DATA, MODELO
 
@@ -90,7 +90,7 @@ def pipeline_real():
             messages=[{"role": "user", "content": correo["cuerpo"]}],
         )
         interpretacion = next(b.text for b in r.content if b.type == "text")
-        st.markdown(interpretacion)
+        texto.markdown(interpretacion)
         resultado["interpretacion"] = interpretacion
         status.update(label="✅ Paso 1 — Solicitud interpretada", state="complete")
 
@@ -131,7 +131,7 @@ def pipeline_real():
                       state="complete")
 
     with st.status("**Paso 3 — Analizar y redactar el reporte**", expanded=True) as status:
-        st.markdown(reporte)
+        texto.markdown(reporte)
         resultado["reporte"] = reporte
         status.update(label="✅ Paso 3 — Reporte ejecutivo listo", state="complete")
 
@@ -150,6 +150,7 @@ def pipeline_real():
         status.update(label="✅ Paso 4 — Correo de respuesta listo (NO se envía solo)", state="complete")
 
     st.session_state["d2_resultado"] = resultado
+    st.session_state["d2_recien"] = True
 
 
 # --------------------------------------------------------- pipeline respaldo --
@@ -158,7 +159,7 @@ def pipeline_respaldo():
     resultado = dict(datos)
 
     with st.status("**Paso 1 — Interpretar la solicitud**", expanded=True) as status:
-        st.write_stream(respaldo.stream_falso(datos["interpretacion"]))
+        texto.stream_md(respaldo.stream_falso(datos["interpretacion"]))
         status.update(label="✅ Paso 1 — Solicitud interpretada", state="complete")
 
     with st.status("**Paso 2 — Consultar datos** (el agente decide qué herramienta usar)",
@@ -173,7 +174,7 @@ def pipeline_respaldo():
                       state="complete")
 
     with st.status("**Paso 3 — Analizar y redactar el reporte**", expanded=True) as status:
-        st.write_stream(respaldo.stream_falso(datos["reporte"], pausa=0.008))
+        texto.stream_md(respaldo.stream_falso(datos["reporte"], pausa=0.008))
         status.update(label="✅ Paso 3 — Reporte ejecutivo listo", state="complete")
 
     with st.status("**Paso 4 — Redactar la respuesta**", expanded=True) as status:
@@ -181,6 +182,7 @@ def pipeline_respaldo():
         status.update(label="✅ Paso 4 — Correo de respuesta listo (NO se envía solo)", state="complete")
 
     st.session_state["d2_resultado"] = resultado
+    st.session_state["d2_recien"] = True
 
 
 st.markdown("---")
@@ -194,6 +196,21 @@ if st.button("▶️ Ejecutar agente", type="primary"):
 if "d2_resultado" in st.session_state:
     res = st.session_state["d2_resultado"]
     st.markdown("---")
+
+    # Si la corrida NO acaba de suceder en este ciclo (p. ej. la app se
+    # re-ejecutó al descargar), volver a mostrar el resultado completo.
+    if not st.session_state.pop("d2_recien", False):
+        with st.expander("Paso 1 — Interpretación de la solicitud"):
+            texto.markdown(res.get("interpretacion", ""))
+        with st.expander(f"Paso 2 — Consultas del agente ({len(res.get('herramientas', []))})"):
+            for h in res.get("herramientas", []):
+                st.markdown(f"🛠️ `{h['nombre']}` · argumentos "
+                            f"`{json.dumps(h['args'], ensure_ascii=False)}`")
+        st.subheader("📄 Reporte ejecutivo")
+        texto.markdown(res.get("reporte", ""))
+        st.subheader("✉️ Correo de respuesta (borrador)")
+        st.text(res.get("correo_respuesta", ""))
+
     c1, c2 = st.columns(2)
     c1.download_button("⬇️ Descargar reporte (.md)", res.get("reporte", ""),
                        file_name="reporte_ejecutivo.md", mime="text/markdown")

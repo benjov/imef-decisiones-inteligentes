@@ -9,7 +9,7 @@ import json
 import pandas as pd
 import streamlit as st
 
-from shared import estilos, respaldo
+from shared import estilos, respaldo, texto
 from shared.cliente import obtener_cliente
 from shared.config import DIR_DATA, MODELO
 from shared.graficas import ESQUEMA_GRAFICAS, renderizar
@@ -83,8 +83,8 @@ def analizar_real():
         system=PROMPT_SISTEMA,
         messages=[{"role": "user", "content": f"Analiza estos datos:\n\n```csv\n{csv_datos}\n```"}],
     ) as stream:
-        texto = st.write_stream(stream.text_stream)
-    st.session_state["d1_analisis"] = texto
+        analisis = texto.stream_md(stream.text_stream)
+    st.session_state["d1_analisis"] = analisis
 
     with st.spinner("La IA está decidiendo qué graficar…"):
         r = cliente.messages.create(
@@ -95,7 +95,7 @@ def analizar_real():
                     "anomalías). Usa cifras EXACTAS de los datos; marca en `resaltar_x` las "
                     "categorías anómalas. Etiquetas en español."),
             messages=[{"role": "user", "content":
-                       f"Datos:\n```csv\n{csv_datos}\n```\n\nAnálisis previo:\n{texto}"}],
+                       f"Datos:\n```csv\n{csv_datos}\n```\n\nAnálisis previo:\n{analisis}"}],
             output_config={"format": {"type": "json_schema", "schema": ESQUEMA_GRAFICAS}},
         )
         bloque = next(b.text for b in r.content if b.type == "text")
@@ -104,8 +104,8 @@ def analizar_real():
 
 def analizar_respaldo():
     datos = respaldo.cargar("demo1")
-    texto = st.write_stream(respaldo.stream_falso(datos["analisis"]))
-    st.session_state["d1_analisis"] = texto
+    analisis = texto.stream_md(respaldo.stream_falso(datos["analisis"]))
+    st.session_state["d1_analisis"] = analisis
     st.session_state["d1_graficas"] = datos["graficas"]
 
 
@@ -117,7 +117,7 @@ if st.button("🔍 Analizar con IA", type="primary", disabled="d1_analisis" in s
     st.rerun()
 
 if "d1_analisis" in st.session_state:
-    st.markdown(st.session_state["d1_analisis"])
+    texto.markdown(st.session_state["d1_analisis"])
     st.download_button("⬇️ Descargar análisis (Markdown)",
                        st.session_state["d1_analisis"],
                        file_name="analisis_ia.md", mime="text/markdown")
@@ -135,7 +135,7 @@ if "d1_analisis" in st.session_state:
 
     for msg in st.session_state["d1_chat"]:
         with st.chat_message(msg["role"], avatar="🧑‍💼" if msg["role"] == "user" else "🤖"):
-            st.markdown(msg["content"])
+            texto.markdown(msg["content"])
 
     pregunta = st.chat_input("Ej. ¿Por qué cayó el margen en agosto?")
     if pregunta:
@@ -147,9 +147,9 @@ if "d1_analisis" in st.session_state:
                 datos = respaldo.cargar("demo1")
                 idx = st.session_state.get("d1_respaldo_idx", 0)
                 respuestas = datos["chat"]
-                texto = respuestas[min(idx, len(respuestas) - 1)]["respuesta"]
+                resp_txt = respuestas[min(idx, len(respuestas) - 1)]["respuesta"]
                 st.session_state["d1_respaldo_idx"] = idx + 1
-                salida = st.write_stream(respaldo.stream_falso(texto))
+                salida = texto.stream_md(respaldo.stream_falso(resp_txt))
             else:
                 cliente = obtener_cliente()
                 contexto = (f"Datos:\n```csv\n{csv_datos}\n```\n\n"
@@ -160,5 +160,5 @@ if "d1_analisis" in st.session_state:
                 with cliente.messages.stream(
                     model=MODELO, max_tokens=1200, system=PROMPT_SISTEMA, messages=mensajes,
                 ) as stream:
-                    salida = st.write_stream(stream.text_stream)
+                    salida = texto.stream_md(stream.text_stream)
         st.session_state["d1_chat"].append({"role": "assistant", "content": salida})
